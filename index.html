@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikings - Layout Reorganizado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 30px;
+            width: 100%;
+        }
+
+        header img {
+            width: 300px;
+        }
+
+        .logo {
+            color: #ccc;
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            background-color: white;
+            min-height: calc(100vh - 70px);
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px 30px;
+            background-color: white;
+        }
+
+        .main-content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .main-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .right-sidebar {
+            width: 200px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+        }
+
+        .right-sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .right-sidebar ul {
+            list-style: none;
+        }
+
+        .right-sidebar li {
+            margin-bottom: 8px;
+        }
+
+        .right-sidebar a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .right-sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .right-sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/Wikipedia-Logo.png" alt="logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Série de TV</h3>
+            <ul>
+                <li><a href="#">Vikings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1 id="tudo-sobre">Tudo sobre Vikings</h1>
+            <p>
+                Vikings é uma série de televisão de drama histórico escrita e criada por Michael Hirst para a emissora
+                History. Filmada na Irlanda, a série estreou em 3 de março de 2013 no Canadá e terminou em 30 de
+                dezembro de 2020 com distribuição em streaming pela Prime Video.
+                <br>
+                <br>
+                Vikings é inspirada nas sagas do Viking Ragnar Lodbrok, um dos mais conhecidos heróis nórdicos lendários
+                e chamado de flagelo da Inglaterra e da França. A série retrata Ragnar como um fazendeiro que alcança a
+                fama por seus ataques bem-sucedidos na Inglaterra e, mais tarde, se torna um Rei escandinavo, com o
+                apoio de sua família e colegas guerreiros: seu irmão Rollo, seu filho Bjorn Flanco de Ferro, e suas
+                esposas, a escudeira Lagertha e a princesa Aslaug.
+                <br>
+                <br>
+                Foi exibida pela Rede Bandeirantes de 15 de janeiro a 24 de maio de 2024 em formato de telenovela na
+                faixa das 22h30. Inicialmente, foi escalada para substituir Outlander, mas com a interrupção da série
+                britânica em 29 de dezembro de 2023 por falta de episódios nas temporadas seguintes, a trama acabou por
+                substituir a Sessão Adrenalina Pura.
+            </p>
+            <br>
+            <hr>
+            <br>
+            <h1 id="sinopse">Sinopse</h1>
+            <p>
+                A série é inspirada nas histórias de invasões, comércio e exploração dos Nórdicos da Escandinávia
+                medieval. A série segue as explorações do lendário líder Viking Ragnar Lodbork, a grande escudeira
+                Lagertha, tripulação e família, como notavelmente foi estabelecido nas sagas Ragnars saga Loðbrókar e
+                Ragnarssona þáttr do século XIII, assim como na obra de Saxão Gramático do século XII, Gesta Danorum. As
+                sagas lendárias nórdicas eram parcialmente contos de ficção baseados na tradição oral nórdica, escritas
+                cerca de 200 a 400 anos após os eventos que descrevem. Mas inspirações são tiradas de fontes históricas
+                da época, como os registros do ataque Viking em Lindisfarne, retratado no segundo episódio, ou a conta
+                de Amade ibne Fadalane sobre os Vikings do Volga, do século X. A série se passa no início da era viking,
+                marcada pelo ataque de Lindisfarne, em 793.
+            </p>
+            <br>
+            <hr>
+            <br>
+            <h1 id="producao">Produção</h1>
+            <p>Uma co-produção irlandesa-canadense, Vikings foi desenvolvida e produzida pela Octagon Films e pela Take
+                5 Productions. Michael Hirst, Morgan O'Sullivan, John Weber, Sherry Marsh, Alan Gasmer, James Flynn e
+                Sheila Hockin foram creditados como produtores executivos. O orçamento da primeira temporada teria
+                sido de 40 milhões de dólares.
+                <br>
+                <br>
+                As filmagens da série tiveram início em julho de 2012 nos Ashford Studios, um complexo de estúdios
+                recém-construído na Irlanda, escolhida como locação devido aos incentivos fiscais que ofereceu. Em
+                16 de agosto de 2012 as cenas envolvendo os drácares foram filmadas em Luggala, no coração das montanhas
+                Wicklow. 70% da primeira temporada foi filmada ao ar livre. Algumas cenas adicionais de cenários
+                foram filmadas na Noruega Ocidental.
+                <br>
+                <br>
+                Johan Renck, Ciarán Donnelly e Ken Girotti dirigiram três episódios cada um. O time de produção
+                incluiu o cinematógrafo John Bartley, o figurinista Joan Bergin, o designer de produção Tom Conroy e
+                o compositor Trevor Morris.
+                <br>
+                <br>
+                De acordo com o ator Clive Standen, que interpreta o personagem Rollo, as temporadas futuras
+                apresentarão personagens históricos como Alfredo, o Grande, Leif Ericson e Ivar, o Sem-Ossos, assim como
+                viagens à Islândia, Rússia, França e ao outro lado do Oceano Atlântico.
+                <br>
+                <br>
+                Em 5 de abril de 2013 o History anunciou que havia renovado a série para uma segunda temporada, com dez
+                episódios. Com Ragnar Lodbrok a serviço do rei Horik, ele se enolverá em incursões cada vez maiores
+                na Inglaterra e na França, e terá de lidar com sua vida amorosa e sua família. Ragnar agora tem dois
+                amores: sua esposa, Lagertha, e a princesa Aslaug. Também terá de lidar com seu irmão, Rollo, que o
+                traiu a serviço do rei dos godos. Athelstan também continuará com seu duelo interno, na qualidade de
+                cristão num mundo pagão. Ao longo desta temporada, Ragnar confrontará o rei Egberto de Wessex.
+                <br>
+                <br>
+                Dois novos atores permanentes foram anunciados em 11 de junho de 2013; Alexander Ludwig, que interpreta
+                Bjorn em sua adolescência, e Linus Roache, interpretando o rei Egberto. A segunda temporada
+                apresentará um avanço no tempo, que transformará o jovem Bjorn (Nathan O'Toole) num hábil espadachim,
+                interpretado por Ludwig. De acordo com relatos, Bjorn ficará sem ver seu pai, Ragner, por "um grande
+                período de tempo". Lagertha terá se casado com um poderoso jarl, um pai adotivo que proporcionará uma
+                criação severa a Bjorn.
+                <br>
+                <br>
+                Diversas fontes da mídia sueca relataram que os atores Edvin Endre, filho da renomada atriz Lena
+                Endre, de Män som hatar kvinnor e Wallander, e Anna Åström, que co-estrelou recentemente, juntamente
+                com Gustaf Skarsgård, que interpreta Floki, no polêmico filme sueco Vi, teriam papeis na segunda
+                temporada.
+                <br>
+                <br>
+                Jeff Woolnough (Copper, Bones), Kari Skogland (The Borgias) se juntarão a Ken Girotti e Ciaran
+                Donnelly como diretores nesta temporada.
+            </p>
+            <br>
+            <hr>
+            <br>
+            <h1 id="recepcao">Recepção</h1>
+            <h2 id="criticas">Críticas</h2>
+            <p>A série recebeu críticas favoráveis, no geral, após a exibição do primeiro episódio, com uma avaliação
+                média de 70% de acordo com o site Metacritic. Alan Sepinwall, do HitFix, elogiou o elenco da série,
+                especialmente Fimmel no papel de Ragnar, comentando que Vikings "não é [uma série] complicada. Ela (...)
+                tem como base a atração inerente a este período e estes personagens para levar a história adiante."
+                Nancy DeWolf Smith, do Wall Street Journal, ressaltou o cenário e os figurinos "naturais e autênticos",
+                elogiando a série por, ao contrário de Spartacus, não ser uma celebração de sexo e violência, mas sim
+                "um estudo de caráter, força, poder e (...) de um despertar social, emocional e até mesmo
+                intelectual". Hank Stuever, escrevendo para o Washington Post, acho que "[esta] nova série
+                dramática, atraente e robusta, (...) entrega todas as cenas gráficas e sangrentas que se esperava dela",
+                acrescentando que ela, ao mesmo tempo, utilizava com sucesso as técnicas dos dramas da televisão a cabo,
+                com todo o cuidado com a atuação e os roteiros e a dimensão de amplitude que remonta a séries como Rome,
+                Sons of Anarchy e Game of Thrones, e que até mesmo a maneira com que a série enfatiza "um senso de
+                orgulho e nobreza neste bando de brutos" serviria para refletir mais uma iteração de Tony Soprano".
+                Neil Genzlinger, no New York Times, louvou a cinematografia "impressionante" e a performance dos atores,
+                especialmente de Fimmel, comparando a série favoravelmente a Game of Thrones e Spartacus devido à
+                ausência de nudez gratuita.
+                <br><br>
+                James Poniewozik, na revista Time, comentou que o conflito de gerações relativamente simples que permeia
+                a série não tem nem de longe a ambição narrativa de um Game of Thrones, ou as sutilezas políticas de
+                Rome, ou tampouco a habilidade com que estas obras lidam com os diálogos, mas que ela consegue obter um
+                resultado muito positivo quando comparada com as "histórias de tablóides" de séries como The Tudors e
+                The Borgias. Poniewozik conclui que o maior dos arcos na trama de Vikings fala mais sobre "forças
+                históricas" do que sobre seus personagens, que não seriam por si só tão complexos. Clark Collis, da
+                Entertainment Weekly, elogiou a performance do elenco, porém considerou que Vikings era uma "espécie de
+                bagunça", à qual faltava a intriga de The Tudors e Game of Thrones. Brian Lowry, na Variety,
+                criticou duramente a série, chamando-a de "uma versão mais simplória de Game of Thrones", considerando,
+                no entanto, que ela conseguia atingir "um nível de atmosfera e ímpeto que fazia com que ela funcionasse
+                como uma diversão leve." No San Francisco Chronicle, David Wiegand se disse desapontado pelo
+                "andamento glacial" da série e pela sua falta de ação, bem como pela "direção frouxa e um roteiro
+                fanfarrão", embora tenha apreciado as performances e os personagens.
+            </p>
+            <br>
+            <h2 id="audiencia">Audiência</h2>
+            <p>De acordo com o Nielsen Ratings, o episódio de estreia da série foi assistido por seis milhões de
+                espectadores nos Estados Unidos, liderando todas as transmissões na faixa que vai dos 18 aos 49 anos de
+                idade. A cifra de 18 milhões de espectadores divulgada inicialmente foi corrigida posteriormente pelo
+                canal, com um pedido de desculpas.
+                <br><br>
+                No Canadá, a estreia da série foi assistida por 1.1 milhão de telespectadores. A primeira temporada teve
+                uma média de 942 000 espectadores.
+            </p>
+            <br>
+            <h2 id="precisao">Precisão histórica</h2>
+            <p>Diversos críticos apontaram imprecisões históricas na maneira com que a série mostra a sociedade Viking.
+                Lars Walker, na revista The American Spectator, criticou a maneira com que ela mostra o governo na Era
+                Viking (especificamente na figura de earl Haraldson) como sendo autocrático, em vez de, essencialmente,
+                democrático. Joel Robert Thompson, no Daily Targum, criticou o suposto desconhecimento, por parte
+                dos povos nórdicos, da existência das ilhas Britânicas, e a sua utilização da pena de morte no lugar do
+                banimento (skoggangr) como forma de punição para crimes hediondos.
+                <br><br>
+                Monty Dobson, um historiador da Universidade Central de Michigan, criticou as vestimentas utilizadas
+                pelos vikings na série, porém afirmou que programas de ficção como Vikings ainda podem servir como uma
+                ferramenta útil para o aprendizado. O jornal norueguês Aftenposten publicou um artigo no qual
+                apontava o fato de que o Templo de Upsália teria sido mostrado de maneira incorreta na série como uma
+                igreja de madeira - um tipo de edificação característico da arquitetura cristã escandinava de períodos
+                posteriores - situada nas montanhas, enquanto na realidade ele se situava numa planície.
+                <br><br>
+                Comentando a respeito da precisão histórica da série, o showrunner Michael Hirst comentou: "tive que
+                tomar liberdades com Vikings porque ninguém sabe ao certo o que aconteceu na Idade das Trevas" e que
+                "queremos que as pessoas o assistam. Um relato histórico dos vikings atingiria centenas, talvez
+                milhares, de pessoas. Nós temos que atingir milhões."
+                <br><br>
+                Quando perguntada sobre por que ela teria lambido a mão do personagem do Vidente, a atriz Katheryn
+                Winnick respondeu: "Era algo que não estava originalmente no roteiro, e queríamos fazer algo único e
+                diferente."
+            </p>
+        </main>
+
+        <aside class="right-sidebar">
+            <h3>Neste Artigo</h3>
+            <ul>
+                <li><a href="#tudo-sobre">Tudo sobre Vikings</a></li>
+                <li><a href="#sinopse">Sinopse</a></li>
+                <li><a href="#producao">Produção</a></li>
+                <li><a href="#recepcao">Recepção</a></li>
+                <li><a href="#criticas">- (Críticas)</a></li>
+                <li><a href="#audiencia">- (Audiência)</a></li>
+                <li><a href="#precisao">- (Precisão Histórica)</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+
+</html>
